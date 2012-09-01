@@ -1,64 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>What is wxPython?</title>
-<link href="/static/css/styles.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
-<script type="text/javascript" src="/static/js/javascript.js"></script>
-</head>
-<body>
-<div id="container">
-  <div id="header">
-    <h1><a href="#">Design Instruct: Clean, Classy Web Template</a></h1>
-    <ul id="nav">
-      <li><a href="/"><span>Home</span></a></li>
-      <li class="current"><a href="/introduction/"><span>About</span></a></li>
-      <li><a href="/download/"><span>Download</span></a></li>
-      <!--<li><a href="#portfolio"><span>Portfolio</span></a></li>-->
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-  </div>
-  <div id="main">
+{% extends 'base.html' %}
+{% set active_page = 'introduction' %}
+{% block title %}What is wxPython?{% endblock %}
+{% block content %}
     <div id="doc">
-      <h2 id="left-heading">Our Services</h2>
-      <p><p> wxPython is a <b>GUI toolkit</b> for the <a
-            href="http://www.python.org/">Python</a> programming language.  It
-        allows Python programmers to create programs with a robust, highly
-        functional graphical user interface, simply and easily.  It is
-        implemented as a Python extension module (native code) that wraps the
-        popular <a href="http://wxwidgets.org/">wxWidgets</a> cross platform
-        GUI library, which is written in C++.
+        <h2 id="left-heading">Our Services</h2>
+
+        <p>
+
+        <p> wxPython is a <b>GUI toolkit</b> for the <a
+                href="http://www.python.org/">Python</a> programming language.
+            It
+            allows Python programmers to create programs with a robust, highly
+            functional graphical user interface, simply and easily. It is
+            implemented as a Python extension module (native code) that wraps
+            the
+            popular <a href="http://wxwidgets.org/">wxWidgets</a> cross platform
+            GUI library, which is written in C++.
 
         <p> Like Python and wxWidgets, wxPython is <b>Open Source</b> which
             means that it is free for anyone to use and the source code is
-            available for anyone to look at and modify.  Or anyone can contribute
+            available for anyone to look at and modify. Or anyone can contribute
             fixes or enhancements to the project.
 
-        <p> wxPython is a <b>cross-platform</b> toolkit.  This means that the
+        <p> wxPython is a <b>cross-platform</b> toolkit. This means that the
             same program will run on multiple platforms without modification.
-            Currently supported platforms are 32-bit Microsoft Windows, most Unix
+            Currently supported platforms are 32-bit Microsoft Windows, most
+            Unix
             or unix-like systems, and Macintosh OS X.
 
         <p> Since the language is Python, wxPython programs are <b>simple,
-            easy</b> to write and easy to understand.  <a
+            easy</b> to write and easy to understand. <a
                 href="test7.py.html">Here</a> is an example.</p>
     </div>
-  </div>
-</div>
-<div id="footer">
-  <div id="footer-inside"> <img style="float:left; clear:both;" src="static/img/footer_social_media.png" width="153" height="60" alt="social media" />
-    <ul id="foot-nav">
-      <li><a href="index.html"><span>Home</span></a></li>
-      <li class="current"><a href="introduction.html"><span>About</span></a></li>
-      <li><a href="download.html"><span>Download</span></a></li>
-      <li><a href="#portfolio"><span>Portfolio</span></a></li>
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-    <p id="footer-logo"><a href="#">wxPython</a><span>Copyright &copy; 2010 Design Instruct. All rights reserved.</span></p>
-  </div>
-</div>
-</body>
-</html>
+{% endblock %}

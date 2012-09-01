@@ -1,126 +1,211 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>What is wxPython?</title>
-<link href="/static/css/styles.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
-<script type="text/javascript" src="/static/js/javascript.js"></script>
-</head>
-<body>
-<div id="container">
-  <div id="header">
-    <h1><a href="#">Design Instruct: Clean, Classy Web Template</a></h1>
-    <ul id="nav">
-      <li><a href="/"><span>Home</span></a></li>
-      <li><a href="/introduction/"><span>About</span></a></li>
-      <li><a href="/download/"><span>Download</span></a></li>
-      <!--<li><a href="#portfolio"><span>Portfolio</span></a></li>-->
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-  </div>
-  <div id="main">
+{% extends 'base.html' %}
+{% block title %}Screenshots{% endblock %}
+{% block content %}
+
     <div id="doc">
-      <h2 id="left-heading">Our Services</h2>
-<p>
-Here is a screen shot of the "minimal" wxPython application:</p><p>
-<img src="/static/img/ss/test1.gif" width="160" height="100" alt="" border="0">
-</p><p>
-Okay, so it is <b>very</b> minimal, but it is small enough that the source should be understandable without somebody holding your hand...  Take a <a href="test1.py.html">peek</a>.
-</p><p></p><hr><p>
+        <h2 id="left-heading">Our Services</h2>
 
-And this is an updated version of the previous program, that displays the size and position in controls rather than printing them.  Also uses Dialog Units.
+        <p>
+            Here is a screen shot of the "minimal" wxPython application:</p>
 
-</p><p>
-<img src="/static/img/ss/test7.gif" width="211" height="146" alt="" border="0">
+        <p>
+            <img src="/static/img/ss/test1.gif" width="160" height="100" alt=""
+                 border="0">
+        </p>
 
-</p><p>
-And here is the <a href="test7.py.html">source</a>.
-</p>
+        <p>
+            Okay, so it is <b>very</b> minimal, but it is small enough that the
+            source should be understandable without
+            somebody holding your hand... Take a <a
+                href="test1.py.html">peek</a>.
+        </p>
 
-<p></p><hr><p>
+        <p></p>
+        <hr>
+        <p>
 
-Here's a shot of PyShell (a wxPython window running an interactive Python interpreter within it) showing that you can interactively create and manipulate objects.  Also notice the terminal window in the background where I installed the RPM and launched pyshell.  (Yes, that's all there is to it!)
+            And this is an updated version of the previous program, that
+            displays the size and position in controls
+            rather than printing them. Also uses Dialog Units.
 
-</p><p>
-<img src="/static/img/ss/pyshell.png" width="767" height="659" alt="" border="0">
+        </p>
 
-</p><p></p><hr><p>
-This is the Unicode sample in the wxPython demo:
-</p><p>
-<img src="/static/img/ss/wxPythonUnicodeDemo.jpg" width="800" height="600" alt="" border="0">
+        <p>
+            <img src="/static/img/ss/test7.gif" width="211" height="146" alt=""
+                 border="0">
 
-</p><p></p><hr><p>
-And here is a screenshot of the demo running on the Mac.
-</p><p>
-<img src="/static/img/ss/wxPythonOSX.png" width="829" height="669" alt="" border="0">
+        </p>
 
-</p><p></p><hr><p>
+        <p>
+            And here is the <a href="test7.py.html">source</a>.
+        </p>
 
-Here are some screen shots from <a href="http://boa-constructor.sourceforge.net/">Boa Constructor</a>.  Not only do they show off Boa, but they show many of the capabilities of wxPython since that is what Boa uses for its GUI.
-</p><p>
-<img src="/static/img/ss/AppView.png" width="557" height="539" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/Explorer.png" width="587" height="433" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/SourceEdit.png" width="616" height="433" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/FrameDesign.png" width="800" height="573" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/Debugger.png" width="800" height="434" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/UMLView.jpg" width="671" height="791" alt="" border="0">
+        <p></p>
+        <hr>
+        <p>
 
-</p><p></p><hr><p>
+            Here's a shot of PyShell (a wxPython window running an interactive
+            Python interpreter within it) showing
+            that you can interactively create and manipulate objects. Also
+            notice the terminal window in the background
+            where I installed the RPM and launched pyshell. (Yes, that's all
+            there is to it!)
 
-Here are various screenshots of wxPython apps developed by some folks on the wxPython-users mail list.  (<b>NOTE</b>: some images have been resized slightly.)  If you have a screen shot you would like to see here then just send it my way.
+        </p>
 
-</p><p>
-<img src="/static/img/ss/ss1.jpg" width="802" height="602" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/ss2.jpg" width="803" height="603" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/remotewin32.png" width="450" height="351" alt="" border="0">
-<img src="/static/img/ss/remotelinux.png" width="463" height="378" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/gnuMedGui_05June02.png" width="833" height="612" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/SalStat.png" width="800" height="630" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/raskroy-8bpp.png" width="671" height="612" alt="" border="0">
-</p><p>
-<img src="/static/img/ss/ziarc_screenshot.jpg" width="750" height="600" alt="" border="0">
-</p><p></p><hr><p>
-And finally, here are some links to screenshots of wxPython apps out in the wild web:
-</p><p>
-</p><ul>
-	<li><a href="http://www.sensi.org/~ak/pyslsk/">PySoulSeek</a>: A GUI for the SoulSeek P2P network</li>
-	<li><a href="http://ipodder.sourceforge.net/screenshots/index.php">iPodder</a>: a cross platform podcast receiver</li>
-	<li>[Please send me links...]
-</li></ul>
+        <p>
+            <img src="/static/img/ss/pyshell.png" width="767" height="659"
+                 alt="" border="0">
 
-<p></p><hr><p>
+        </p>
 
-The old <a href="wxpshots.php" target="_top">Screen shots</a> are still available too.
-</p><p>
+        <p></p>
+        <hr>
+        <p>
+            This is the Unicode sample in the wxPython demo:
+        </p>
 
-</p> 
+        <p>
+            <img src="/static/img/ss/wxPythonUnicodeDemo.jpg" width="800"
+                 height="600" alt="" border="0">
+
+        </p>
+
+        <p></p>
+        <hr>
+        <p>
+            And here is a screenshot of the demo running on the Mac.
+        </p>
+
+        <p>
+            <img src="/static/img/ss/wxPythonOSX.png" width="829" height="669"
+                 alt="" border="0">
+
+        </p>
+
+        <p></p>
+        <hr>
+        <p>
+
+            Here are some screen shots from <a
+                href="http://boa-constructor.sourceforge.net/">Boa
+            Constructor</a>. Not
+            only do they show off Boa, but they show many of the capabilities of
+            wxPython since that is what Boa uses
+            for its GUI.
+        </p>
+
+        <p>
+            <img src="/static/img/ss/AppView.png" width="557" height="539"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/Explorer.png" width="587" height="433"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/SourceEdit.png" width="616" height="433"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/FrameDesign.png" width="800" height="573"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/Debugger.png" width="800" height="434"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/UMLView.jpg" width="671" height="791"
+                 alt="" border="0">
+
+        </p>
+
+        <p></p>
+        <hr>
+        <p>
+
+            Here are various screenshots of wxPython apps developed by some
+            folks on the wxPython-users mail list. (<b>NOTE</b>:
+            some images have been resized slightly.) If you have a screen shot
+            you would like to see here then just send
+            it my way.
+
+        </p>
+
+        <p>
+            <img src="/static/img/ss/ss1.jpg" width="802" height="602" alt=""
+                 border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/ss2.jpg" width="803" height="603" alt=""
+                 border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/remotewin32.png" width="450" height="351"
+                 alt="" border="0">
+            <img src="/static/img/ss/remotelinux.png" width="463" height="378"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/gnuMedGui_05June02.png" width="833"
+                 height="612" alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/SalStat.png" width="800" height="630"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/raskroy-8bpp.png" width="671" height="612"
+                 alt="" border="0">
+        </p>
+
+        <p>
+            <img src="/static/img/ss/ziarc_screenshot.jpg" width="750"
+                 height="600" alt="" border="0">
+        </p>
+
+        <p></p>
+        <hr>
+        <p>
+            And finally, here are some links to screenshots of wxPython apps out
+            in the wild web:
+        </p>
+
+        <p>
+        </p>
+        <ul>
+            <li><a href="http://www.sensi.org/~ak/pyslsk/">PySoulSeek</a>: A GUI
+                for the SoulSeek P2P network
+            </li>
+            <li><a href="http://ipodder.sourceforge.net/screenshots/index.php">iPodder</a>:
+                a cross platform podcast
+                receiver
+            </li>
+            <li>[Please send me links...]
+            </li>
+        </ul>
+
+        <p></p>
+        <hr>
+        <p>
+
+            The old <a href="wxpshots.php" target="_top">Screen shots</a> are
+            still available too.
+        </p>
+
+        <p>
+
+        </p>
     </div>
-  </div>
-</div>
-<div id="footer">
-  <div id="footer-inside"> <img style="float:left; clear:both;" src="static/img/footer_social_media.png" width="153" height="60" alt="social media" />
-    <ul id="foot-nav">
-      <li><a href="index.html"><span>Home</span></a></li>
-      <li class="current"><a href="introduction.html"><span>About</span></a></li>
-      <li><a href="download.html"><span>Download</span></a></li>
-      <li><a href="#portfolio"><span>Portfolio</span></a></li>
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-    <p id="footer-logo"><a href="#">wxPython</a><span>Copyright &copy; 2010 Design Instruct. All rights reserved.</span></p>
-  </div>
-</div>
-</body>
-</html>
+{% endblock %}

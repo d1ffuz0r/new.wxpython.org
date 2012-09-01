@@ -25,13 +25,16 @@ def download():
 def quotes():
     return render_template('quotes.html')
 
+
 @app.route('/screenshots/')
 def screenshots():
     return render_template('screenshots.html')
 
+
 @app.route('/recentchanges/')
 def recentchanges():
     return render_template('recentchanges.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

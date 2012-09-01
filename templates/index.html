@@ -1,51 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>wxPython</title>
-<link href="/static/css/styles.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
-<script type="text/javascript" src="/static/js/javascript.js"></script>
-</head>
-<body class="index">
-<div id="container">
-  <div id="header">
-    <h1><a href="#">Design Instruct: Clean, Classy Web Template</a></h1>
-    <ul id="nav">
-      <li class="current"><a href="/"><span>Home</span></a></li>
-      <li><a href="/introduction/"><span>About</span></a></li>
-      <li><a href="/download/"><span>Download</span></a></li>
-      <!--<li><a href="#portfolio"><span>Portfolio</span></a></li>-->
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-  </div>
-  <div id="featured">
-    <div id="feature-description">
-      <h2 id="why-us">Why Choose wxPython?</h2>
-      <p>Welcome to the home of wxPython, a blending of the
-        <a href="http://wxwidgets.org/" target="_top">wxWidgets</a> C++ class library
-        with the <a href="http://www.python.org/" target="_top">Python</a> programming language.
-      </p>
-      <p id="about-us-button"><a href="download.html">Download</a></p>
-      <!--<img id="florish" src="static/img/florish.png" width="200" height="85" alt="Florish" /> -->
-    </div>
-    <div id="feature-slider">
-      <div class="slides-holder">
-        <div class="slide-meta">
-          <div class="description">
-            <h3>wxpython.org</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum imperdiet hendrerit. Quisque tincidunt aliquam</p>
-          </div>
-          <ul class="controls">
-            <li class="left">Left</li>
-            <li class="right">Right</li>
-          </ul>
+{% extends 'base.html' %}
+{% set active_page = 'index' %}
+{% block precontent %}
+    <div id="featured">
+        <div id="feature-description">
+            <h2 id="why-us">Why Choose wxPython?</h2>
+            <p>Welcome to the home of wxPython, a blending of the
+                <a href="http://wxwidgets.org/" target="_top">wxWidgets</a> C++ class library
+                with the <a href="http://www.python.org/" target="_top">Python</a> programming language.
+            </p>
+            <p id="about-us-button"><a href="download.html">Download</a></p>
+            <!--<img id="florish" src="static/img/florish.png" width="200" height="85" alt="Florish" /> -->
         </div>
-      </div>
+        <div id="feature-slider">
+            <div class="slides-holder">
+                <div class="slide-meta">
+                    <div class="description">
+                        <h3>wxpython.org</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum imperdiet hendrerit. Quisque tincidunt aliquam</p>
+                    </div>
+                    <ul class="controls">
+                        <li class="left">Left</li>
+                        <li class="right">Right</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="main">
+{% endblock %}
+{% block content %}
     <div id="left">
       <h2 id="left-heading">Our Services</h2>
       <h3>Quotes</h3>
@@ -56,7 +38,8 @@
       <a class="read-more" href="http://wiki.wxpython.org/How_to_Learn_wxPython">Read More</a>
       <h3>Search Engine Optimization</h3>
       <p>Quisque tincidunt aliquam justo, eu volutpat odio tempus nec. Fusce semper tortor a tellus ornare sed consequat diam elementum. Quisque tincidunt aliquam justo, eu volutpat odio tempus nec. Fusce semper...</p>
-      <a class="read-more" href="#readmore">Read More</a> </div>
+      <a class="read-more" href="#readmore">Read More</a>
+    </div>
     <div id="mid">
       <h2 id="mid-heading">Latest Projects</h2>
       <img src="static/img/mid_latest01.png" width="310" height="173" alt="Devise Function" />
@@ -85,20 +68,4 @@
         </p>
       </div>
     </div>
-  </div>
-</div>
-<div id="footer">
-  <div id="footer-inside"> <img style="float:left; clear:both;" src="static/img/footer_social_media.png" width="153" height="60" alt="social media" />
-    <ul id="foot-nav">
-      <li class="current"><a href="index.html"><span>Home</span></a></li>
-      <li><a href="introduction.html"><span>About</span></a></li>
-      <li><a href="download.html"><span>Download</span></a></li>
-      <li><a href="#portfolio"><span>Portfolio</span></a></li>
-      <li><a href="#blog"><span>Blog</span></a></li>
-      <li><a href="#contact"><span>Contact</span></a></li>
-    </ul>
-    <p id="footer-logo"><a href="#">wxPython</a><span>Copyright &copy; 2010 Design Instruct. All rights reserved.</span></p>
-  </div>
-</div>
-</body>
-</html>
+{% endblock %}

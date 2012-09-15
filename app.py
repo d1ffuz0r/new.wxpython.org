@@ -31,6 +31,11 @@ def screenshots():
     return render_template('screenshots.html')
 
 
+@app.route('/screenshots/wxpshots/')
+def wxphsots():
+    return render_template('wxpshots.html')
+
+
 @app.route('/recentchanges/')
 def recentchanges():
     return render_template('recentchanges.html')

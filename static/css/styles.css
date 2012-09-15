@@ -2,7 +2,7 @@
  * Clean, Classy Web Design Template  - By Design Instruct
  *
  * This is an accompanying source file for the tutorial on Design Instruct
- * called Create a Clean and Classy Web Design in Photoshop 
+ * called Create a Clean and Classy Web Design in Photoshop
  * http://designinstruct.com/web-design/clean-classy-web-design-photoshop/
  *
  * LICENSE: Creative Commons Attribution 2.5 - http://creativecommons.org/licenses/by/2.5/
@@ -32,6 +32,9 @@ p {
 	margin-top:9px;
 	margin-bottom:4px;
 	line-height:18px;
+}
+a {
+    color: #000;
 }
 #container {
 	width:960px;
@@ -195,11 +198,13 @@ ul.controls {
 #main h3 {
 	font-size:15px;
 	font-style:bold;
+    padding-bottom: 15px;
 }
 #left, #mid, #right {
 	width:310px;
 	float:left;
 	margin-right:10px;
+    margin-top: 40px;
 }
 #doc {
     width: 100%;
@@ -214,9 +219,6 @@ ul.controls {
 	display:block;
 	width:100%;
 	height:60px;
-	margin-top:30px;
-	text-indent:-9999px;
-	background:url(../img/bg_sprite_main_headings.png) no-repeat;
 }
 #left-heading { background-position: 0 0; }
 #mid-heading { background-position: -323px 0; }

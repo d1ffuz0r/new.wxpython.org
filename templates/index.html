@@ -8,7 +8,7 @@
                 <a href="http://wxwidgets.org/" target="_top">wxWidgets</a> C++ class library
                 with the <a href="http://www.python.org/" target="_top">Python</a> programming language.
             </p>
-            <p id="about-us-button"><a href="download.html">Download</a></p>
+            <p id="about-us-button"><a href="/download/">Download</a></p>
             <!--<img id="florish" src="static/img/florish.png" width="200" height="85" alt="Florish" /> -->
         </div>
         <div id="feature-slider">
@@ -29,11 +29,10 @@
 {% endblock %}
 {% block content %}
     <div id="left">
-      <h2 id="left-heading">Our Services</h2>
       <h3>Quotes</h3>
       <p>Here's what people are saying about wxPython...</p>
       <a class="read-more" href="/quotes/">Read More</a>
-      <h3>Identity and Branding</h3>
+      <h3>How to learn wxPython</h3>
       <p>We have had a lot of questions on the newsgroup asking how to go about learning wxPython. This page gives some pointers on how to do just that.</p>
       <a class="read-more" href="http://wiki.wxpython.org/How_to_Learn_wxPython">Read More</a>
       <h3>Search Engine Optimization</h3>
@@ -41,14 +40,15 @@
       <a class="read-more" href="#readmore">Read More</a>
     </div>
     <div id="mid">
-      <h2 id="mid-heading">Latest Projects</h2>
-      <img src="static/img/mid_latest01.png" width="310" height="173" alt="Devise Function" />
+      <h3>Screenshots</h3>
+      {#<img src="static/img/mid_latest01.png" width="310" height="173" alt="Devise Function" />#}
       <p>Some screenshots of appications when use wxPython library</p>
-      <a class="read-more" href="/screenshots/">Read More</a> <img src="static/img/mid_latest02.png" width="310" height="173" alt="Latest 02" />
-      <p>Integer nec augue ac est semper pulvinar. Aenean luctus, leo in tincidunt mattis, enim diam convallis tellus, in vulputate enim tortor quis nisl. Curabitur nibh magna,</p>
+      <a class="read-more" href="/screenshots/">Read More</a>
+      {#<img src="static/img/mid_latest02.png" width="310" height="173" alt="Latest 02" />
+      <p>Integer nec augue ac est semper pulvinar. Aenean luctus, leo in tincidunt mattis, enim diam convallis tellus, in vulputate enim tortor quis nisl. Curabitur nibh magna,</p>#}
     </div>
     <div id="right">
-      <h2 id="right-heading">Recent Entries</h2>
+      <h3>Recent changes</h3>
       <ul id="recent-entries">
         <li><a href="#"><strong>Lorem ipsum dolor sit amet</strong></a></li>
         <li><strong><a href="#">Morbi vestibulum</a></strong></li>
@@ -60,12 +60,12 @@
         <li><strong><a href="#">Morbi vestibulum</a></strong></li>
         <li><strong><a href="#">Fusce semper tortor a tellus</a></strong><a href="#"></a></li>
       </ul>
-      <div id="newsletter">
+      {#<div id="newsletter">
         <p>Subscribe to get the latest updates delivered right to your inbox. What's not to love?</p>
         <p id="newsletter-input">
           <input id="newsletter-email" type="text" />
           <input id="newsletter-submit" type="submit" value="go"  />
         </p>
-      </div>
+      </div>#}
     </div>
 {% endblock %}

@@ -318,6 +318,9 @@ p#newsletter-input {
     text-align: left;
     padding: 10px 4px 8px;
 }
+#banners a {
+    padding: 0 4px;
+}
 ul#foot-nav {
 	clear:both;
 	display:block;

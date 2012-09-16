@@ -314,6 +314,10 @@ p#newsletter-input {
 	width:960px;
 	margin:0 auto;
 }
+#banners {
+    text-align: left;
+    padding: 10px 4px 8px;
+}
 ul#foot-nav {
 	clear:both;
 	display:block;

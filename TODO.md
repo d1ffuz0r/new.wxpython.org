@@ -4,10 +4,10 @@ PAGES
 home
 ====
 * index
-* introduction
-* quotes
-* screenshots
-* learnin wxPython (link)
+* introduction +
+* quotes +
+* screenshots +
+* learnin wxPython (link) +
 * recent changes
 * new wxPyDocs (link)
 * presentations
@@ -15,12 +15,8 @@ home
 * bookerrata
 * Get the T-shirt (link)
 * searchsite
-
-download
-===
-* stable
-* development
-* build instuctions
+* books +
+* download +
 
 community links
 =========
@@ -36,7 +32,3 @@ community links
 * http://wxpython.org/contribute.php (page)
 * http://wxpython.org/purchase.php
 * http://wxpython.org/codeguidelines.php
-
-other
-=====
-books

@@ -2,48 +2,48 @@
 {% block title %}Building wxPython 2.8 for Development and Testin{% endblock %}
 {% block content %}
     <div id="doc">
-        <h2>Building wxPython 2.8 for Development and Testing</h1>
+      <h2>Building wxPython 2.8 for Development and Testing</h1>
 
-        <p>This file describes how I build wxWidgets and wxPython while doing
-          development and testing, and is meant to help other people that want
-          to do the same thing.  I'll assume that you are using either a SVN
-          snapshot from <a class="reference external" href="http://wxWidgets.org/snapshots/">http://wxWidgets.org/snapshots/</a>, a checkout from SVN, or
-          one of the released wxPython-src-2.8.* tarballs.  I'll also assume that
-          you know your way around your system, the compiler, etc. and most
-          importantly, that you know what you are doing!  ;-)</p>
-          <p>If you want to also install the version of wxPython you build into
-            your site-packages dir and be your default version of wxPython, then a
-            few additional steps are needed, and you may want to use slightly
-            different options.  See the <a class="reference external" href="INSTALL.html">INSTALL</a> document for more details.  If
-            you only use the instructions in this <a class="reference external" href="/download/build/">BUILD</a> document file then you
-            will end up with a separate installation of wxPython and you can
-            switch back and forth between this and the release version that you
-            may already have installed.</p>
-            <p>If you want to make changes to any of the <tt class="docutils literal">*.i</tt> files, (SWIG
-              interface definition files,) or to regenerate the extension sources or
-              renamer modules, then you will need an up to date version of SWIG,
-              plus some patches.  Get the sources for version 1.3.29, and then apply
-              the patches in wxPython/SWIG and then build SWIG like normal.  See the
-              README.txt in the wxPython/SWIG dir for details about each patch and
-              also info about those that may already have been applied to the SWIG
-              sources.  If you install this build of SWIG to a location that is not
-              on the PATH (so it doesn't interfere with an existing SWIG install for
-              example) then you can use a setup.py command-line option named SWIG
-              set to the full path name of the executable and the wxPython build will
-              use it.  See below for an example.</p>
-              <p>In the text below I'll use WXDIR with environment variable syntax
-                (either $WXDIR or %WXDIR%) to refer to the top level directory where
-                your wxWidgets and wxPython sources are located.  It will equate to
-                where ever you checked out the wxWidgets code from SVN, or untarred
-                the wxPython-src tarball to.  You can either substitute the $WXDIR text
-                below with your actual dir, or set the value in the environment and
-                use it just like you see it below.</p>
-                <p>If you run into what appears to be compatibility issues between
-                  wxWidgets and wxPython while building wxPython, be sure you are using
-                  the wxWidgets sources included with the wxPython-src tarball or the
-                  SVN snapshot, and not a previously installed version or a version
-                  installed from one of the standard wxWidgets installers.  With the
-"unstable" releases (have a odd-numbered minor release value, where
+<p>This file describes how I build wxWidgets and wxPython while doing
+  development and testing, and is meant to help other people that want
+  to do the same thing.  I'll assume that you are using either a SVN
+  snapshot from <a class="reference external" href="http://wxWidgets.org/snapshots/">http://wxWidgets.org/snapshots/</a>, a checkout from SVN, or
+  one of the released wxPython-src-2.8.* tarballs.  I'll also assume that
+  you know your way around your system, the compiler, etc. and most
+  importantly, that you know what you are doing!  ;-)</p>
+<p>If you want to also install the version of wxPython you build into
+  your site-packages dir and be your default version of wxPython, then a
+  few additional steps are needed, and you may want to use slightly
+  different options.  See the <a class="reference external" href="INSTALL.html">INSTALL</a> document for more details.  If
+  you only use the instructions in this <a class="reference external" href="/download/build/">BUILD</a> document file then you
+  will end up with a separate installation of wxPython and you can
+  switch back and forth between this and the release version that you
+  may already have installed.</p>
+<p>If you want to make changes to any of the <tt class="docutils literal">*.i</tt> files, (SWIG
+  interface definition files,) or to regenerate the extension sources or
+  renamer modules, then you will need an up to date version of SWIG,
+  plus some patches.  Get the sources for version 1.3.29, and then apply
+  the patches in wxPython/SWIG and then build SWIG like normal.  See the
+  README.txt in the wxPython/SWIG dir for details about each patch and
+  also info about those that may already have been applied to the SWIG
+  sources.  If you install this build of SWIG to a location that is not
+  on the PATH (so it doesn't interfere with an existing SWIG install for
+  example) then you can use a setup.py command-line option named SWIG
+  set to the full path name of the executable and the wxPython build will
+  use it.  See below for an example.</p>
+<p>In the text below I'll use WXDIR with environment variable syntax
+  (either $WXDIR or %WXDIR%) to refer to the top level directory where
+  your wxWidgets and wxPython sources are located.  It will equate to
+  where ever you checked out the wxWidgets code from SVN, or untarred
+  the wxPython-src tarball to.  You can either substitute the $WXDIR text
+  below with your actual dir, or set the value in the environment and
+  use it just like you see it below.</p>
+<p>If you run into what appears to be compatibility issues between
+  wxWidgets and wxPython while building wxPython, be sure you are using
+  the wxWidgets sources included with the wxPython-src tarball or the
+  SVN snapshot, and not a previously installed version or a version
+  installed from one of the standard wxWidgets installers.  With the
+  "unstable" releases (have a odd-numbered minor release value, where
 the APIs are allowed to change) there are often significant
 differences between the W.X.Y release of wxWidgets and the W.X.Y.Z
 release of wxPython.</p>
@@ -499,20 +499,20 @@ right one.</p>
 </dd>
 </dl>
 </blockquote>
-<p>This builds the wxPython extension modules and places them directly
-in the wx package dir located in the source tree.  This is
-convenient for testing the build or running the demo and samples
-without needing to do an install to site-packages and possibly
-disturbing the wxPython you already have installed.  You just need
-to set PYTHONPATH so Python will find this version of the wx
-package first.  When you are ready to install this build you can do
-it by adding 'install' to the command line and running it again.
-See the INSTALL.txt file for more details.</p>
-<p>Notice that we had to turn off the building of the wx.glcanvas and
-wx.activex modules.  There are also a few other features that are
-not currently supported by this build, most notably the
-wx.GraphicsContext and wx.media.MediaCtrl families of classes.
-Hopefully that will improve over time.</p>
+  <p>This builds the wxPython extension modules and places them directly
+    in the wx package dir located in the source tree.  This is
+    convenient for testing the build or running the demo and samples
+    without needing to do an install to site-packages and possibly
+    disturbing the wxPython you already have installed.  You just need
+    to set PYTHONPATH so Python will find this version of the wx
+    package first.  When you are ready to install this build you can do
+    it by adding 'install' to the command line and running it again.
+    See the INSTALL.txt file for more details.</p>
+  <p>Notice that we had to turn off the building of the wx.glcanvas and
+    wx.activex modules.  There are also a few other features that are
+    not currently supported by this build, most notably the
+    wx.GraphicsContext and wx.media.MediaCtrl families of classes.
+    Hopefully that will improve over time.</p>
 </li>
 </ol>
 </div>

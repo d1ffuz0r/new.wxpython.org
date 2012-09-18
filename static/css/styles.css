@@ -25,6 +25,12 @@ body {
 	color:#323232;
     background:#fbf5ea url(../img/bg.jpg) repeat-x top left;
 }
+pre.literal-block, pre.doctest-block {
+    margin-left: 2em ;
+    margin-right: 2em ;
+    background-color: #eeeeee;
+    padding: 5px;
+}
 body.index{
     background:#fbf5ea url(../img/bg_body.jpg) repeat-x top left;
 }
@@ -211,9 +217,9 @@ ul.controls {
     font-size: 16px;
     margin-bottom: 70px;
 }
-#doc h2 {
+/*#doc h2 {
     width: 310px;
-}
+}*/
 #doc td, #doc tr, #doc table {
   border: none;
 }

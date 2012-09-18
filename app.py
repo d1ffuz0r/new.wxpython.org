@@ -21,6 +21,21 @@ def download():
     return render_template('download.html')
 
 
+@app.route('/download/build/')
+def build():
+    return render_template('build.html')
+
+
+@app.route('/download/build28/')
+def build28():
+    return render_template('build28.html')
+
+
+@app.route('/download/install/')
+def install():
+    return render_template('install.html')
+
+
 @app.route('/quotes/')
 def quotes():
     return render_template('quotes.html')

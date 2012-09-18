@@ -51,9 +51,9 @@ def wxphsots():
     return render_template('wxpshots.html')
 
 
-@app.route('/recentchanges/')
+@app.route('/changes/')
 def recentchanges():
-    return render_template('recentchanges.html')
+    return render_template('changes.html')
 
 
 @app.route('/books/')

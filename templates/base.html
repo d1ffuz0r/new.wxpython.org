@@ -3,6 +3,7 @@
   ('/introduction/', 'introduction', 'About'),
   ('/download/', 'download', 'Download'),
   ('/screenshots/', 'screenshots', 'Screenshots'),
+  ('http://wxpython.org/docs/api/', 'docs', 'Docs')
 ] %}
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -12,8 +13,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{% block title %}{% endblock %}</title>
     <link href="/static/css/styles.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript"
-            src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
+    {#<script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>#}
     <script type="text/javascript" src="/static/js/javascript.js"></script>
 </head>
 <body class="{% if active_page is defined %}{{ active_page }}{% endif %}">
@@ -42,7 +43,7 @@
         <a href="http://wxWidgets.org/"><img src="/static/img/wxWinButton.png" border="0" width="100" height="43" alt=""></a>
         <a href="http://wxPython.org/"><img src="/static/img/wxPyButton.png" width="100" height="43" alt="" border="0"></a>
         <a href="http://www.wxdesigner-software.de/"><img src="/static/img/wxDesignerButton.png" width="100" height="43" alt="" border="0"></a>
-        <a href="http://sourceforge.net/projects/wxpython/"><img src="http://sourceforge.net/sflogo.php?group_id=10718&amp;type=1" width="100" height="43" border="0" alt="SourceForge Logo"></a>
+        {#<a href="http://sourceforge.net/projects/wxpython/"><img src="http://sourceforge.net/sflogo.php?group_id=10718&amp;type=1" width="100" height="43" border="0" alt="SourceForge Logo"></a>#}
               </div>
         <ul id="foot-nav">
             <li><a href="/"><span>Home</span></a></li>

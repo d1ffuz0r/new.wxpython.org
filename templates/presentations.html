@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Presentations{% endblock %}
+{% block content %}
+    <div id="doc">
+        <h2 id="left-heading">Presentaions</h2>
+        {% for name, title in presentations %}
+          <p><a href="/presentation/{{ name }}/">{{ title }}</a></p>
+        {% endfor %}
+    </div>
+{% endblock %}

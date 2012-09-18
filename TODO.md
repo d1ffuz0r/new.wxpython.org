@@ -4,19 +4,7 @@ PAGES
 home
 ====
 * index
-* introduction +
-* quotes +
-* screenshots +
-* learnin wxPython (link) +
 * recent changes
-* new wxPyDocs (link)
-* presentations
-* buy the book (link)
-* bookerrata
-* Get the T-shirt (link)
-* searchsite
-* books +
-* download +
 
 community links
 =========

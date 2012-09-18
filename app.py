@@ -61,5 +61,24 @@ def books():
     return render_template('books.html')
 
 
+@app.route('/search/')
+def search():
+    return render_template('search.html')
+
+
+@app.route('/presentations/')
+def presentations():
+    items = (('oscon_2003', 'OSCON 2003'),
+             ('oscon_2004', 'OSCON 2004'),
+             ('oscon_2006', 'OSCON 2006'),
+             ('oscon_2008', 'OSCON 2008'))
+    return render_template('presentations.html', presentations=items)
+
+
+@app.route('/presentation/<name>/')
+def presentations_item(name=None):
+    return render_template('present_item.html', name=name)
+
+
 if __name__ == '__main__':
     app.run(debug=True)

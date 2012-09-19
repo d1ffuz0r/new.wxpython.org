@@ -30,32 +30,26 @@
 {% endblock %}
 {% block content %}
     <div id="left">
-      <h3>Quotes</h3>
+      <h3><a href="/quotes/">Quotes</a></h3>
       <p>Here's what people are saying about wxPython...</p>
-      <a class="read-more" href="/quotes/">Read More</a>
-      <h3>Get the T-shirt</h3>
+      <p class="read-more"></p>
+      <h3><a href="http://www.cafepress.com/wxpython/">Get the T-shirt</a></h3>
       <img src="/static/img/wxpython_white_tshirt.jpeg" width="155" alt="" />
       <p>Buy a nice T-shirt and other</p>
-      <a class="read-more" href="http://www.cafepress.com/wxpython/">Buy</a>
-      <h3>How to learn wxPython</h3>
+      <p class="read-more"></p>
+      <h3><a href="http://wiki.wxpython.org/How_to_Learn_wxPython">How to learn wxPython</a></h3>
       <p>We have had a lot of questions on the newsgroup asking how to go about learning wxPython. This page gives some pointers on how to do just that.</p>
-      <a class="read-more" href="http://wiki.wxpython.org/How_to_Learn_wxPython">Read More</a>
-      <h3>Presentations</h3>
-      <p>Presentation from conferencies</p>
-      <a class="read-more" href="/presentations/">Read More</a>
+      <p class="read-more"></p>
     </div>
     <div id="mid">
-      <h3>Screenshots</h3>
-      <img src="/static/img/ss/wx/test3.png" width="250" alt="Devise Function" />
+      <h3><a href="/presentations/">Presentations</a></h3>
+      <p>Presentation from conferencies</p>
+      <p class="read-more"></p>
+      <h3><a href="/screenshots/">Screenshots</a></h3>
+      <img src="/static/img/ss/wx/test3.png" width="180" alt="Devise Function" />
       <p>Some screenshots of appications when use wxPython library</p>
-      <a class="read-more" href="/screenshots/">Read More</a>
-      <h3>Books</h3>
-      <img src="/static/img/wxPyBook_cover_150.png" alt="wxPython in Action" width="155">
-      <p>Book about development with wxPython</p>
-      <a class="read-more" href="/books/">Read More</a>
-    </div>
-    <div id="right">
-      <h3>Recent changes</h3>
+      <p class="read-more"></p>
+      <h3><a href="/changes/">Recent changes</a></h3>
       <ul id="recent-entries">
         <li><a href="/changes/#id1"><strong>2.9.4.0 at 21-July-2012</strong></a></li>
         <li><a href="/changes/#id2"><strong>2.9.3.1 at 29-Dec-2011</strong></a></li>
@@ -64,10 +58,17 @@
         <li><a href="/changes/#id5"><strong>2.9.2.3 at 8-Sept-2011</strong></a></li>
         <li><a href="/changes/#id6"><strong>2.9.2.2 at 5-Sept-2011</strong></a></li>
       </ul>
-      <a class="read-more" href="/changes/">Read More</a>
-      <h3>Search</h3>
+      <p class="read-more"></p>
+    </div>
+    <div id="right">
+      <h3><a href="/search/">Search</a></h3>
       <p>Search by site</p>
-      <a class="read-more" href="/search/">Search</a>
+      <p class="read-more"></p>
+      <h3><a href="/books/">Books</a></h3>
+      <img src="/static/img/wxPyBook_cover_150.png" alt="wxPython in Action" width="123">
+      <p>Book about development with wxPython</p>
+      <p class="read-more"></p>
+
       {#<div id="newsletter">
         <p>Subscribe to get the latest updates delivered right to your inbox. What's not to love?</p>
         <p id="newsletter-input">
@@ -82,13 +83,11 @@
         <li><a href="/maillist/" alt=""><strong>Mail lists</strong></a></li>
         <li><a href="/irc/" alt=""><strong>Chat</strong></a></li>
         <li><a href="http://svn.wxwidgets.org/viewvc" alt=""><strong>Browse code</strong></a></li>
-        <li><a href="http://trac.wxwidgets.org/" alt=""><strong>Report a bug</strong></a></li>
-        <li><a href="http://trac.wxwidgets.org/" alt=""><strong>Submit a patch</strong></a></li>
+        <li><a href="http://trac.wxwidgets.org/" alt=""><strong>Submit a patch or bug</strong></a></li>
         <li><a href="http://trac.wxwidgets.org/" alt=""><strong>Feature Request</strong></a></li>
         <li><a href="/contribute/" alt=""><strong>Contribute</strong></a></li>
         <li><a href="/purchase/" alt=""><strong>Support</strong></a></li>
         <li><a href="/codeguidelines/" alt=""><strong>Code guidelines</strong></a></li>
       </ul>
-
     </div>
 {% endblock %}

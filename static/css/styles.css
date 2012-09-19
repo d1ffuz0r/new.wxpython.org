@@ -209,8 +209,7 @@ ul.controls {
 #left, #mid, #right {
 	width:310px;
 	float:left;
-	margin-right:10px;
-    margin-top: 40px;
+    margin: 40px 10px 40px 0;
 }
 #doc {
     width: 100%;
@@ -236,13 +235,11 @@ ul.controls {
 #left-heading { background-position: 0 0; }
 #mid-heading { background-position: -323px 0; }
 #right-heading { background-position: -649px 0; }
-a.read-more {
+p.read-more {
 	display:block;
-	padding-bottom:20px;
 	width:100%;
 	height:39px;
 	background:url(../img/bg_divider.png) no-repeat top left;
-	text-indent:-9999px;
 }
 /* Recent Entries */
 ul#recent-entries {

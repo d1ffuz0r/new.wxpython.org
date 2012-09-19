@@ -4,12 +4,7 @@ PAGES
 home
 ====
 * index
-* maillist
-* irc
-* contribute
 * purchase
-* codeguidelines
-
 
 community links
 =========

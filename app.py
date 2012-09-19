@@ -66,6 +66,26 @@ def search():
     return render_template('search.html')
 
 
+@app.route('/irc/')
+def irc():
+    return render_template('irc.html')
+
+
+@app.route('/maillists/')
+def maillists():
+    return render_template('maillists.html')
+
+
+@app.route('/contribute/')
+def contribute():
+    return render_template('contribute.html')
+
+
+@app.route('/codeguidelines/')
+def codegidelines():
+    return render_template('code.html')
+
+
 @app.route('/presentations/')
 def presentations():
     items = (('oscon_2003', 'OSCON 2003'),
@@ -73,6 +93,11 @@ def presentations():
              ('oscon_2006', 'OSCON 2006'),
              ('oscon_2008', 'OSCON 2008'))
     return render_template('presentations.html', presentations=items)
+
+
+@app.route('/purchase/')
+def purchase():
+    return render_template('purchase.html')
 
 
 @app.route('/presentation/<name>/')
